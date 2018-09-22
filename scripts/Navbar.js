@@ -4,7 +4,6 @@ class Navbar extends React.Component {
       <div className="navbar">
         {/* <img src="images/StorzPower Logo v2_Text_Only.png"/> */}
         <ul>
-          <li><a href="#">v1</a></li>
           <li><a href="#residential">Residential</a></li>
           <li><a href="#commercial">Commercial</a></li>
           <li><a href="#specifications">Specifications</a></li>
