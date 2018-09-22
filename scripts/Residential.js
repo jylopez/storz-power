@@ -1,9 +1,9 @@
 class Residential extends React.Component {
   render() {
     return (
-      <div className="residential">
+      <div className="residential" id="residential">
         <img src="images/Asset 14.jpg"/>
-        <img src="images/Asset 12.jpg"/>
+        <img className="device" src="images/Asset 12.png"/>
         <div className="title">
           <span className="bold">HOME</span> <span>STORAGE</span>
         </div>

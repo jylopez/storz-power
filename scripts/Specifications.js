@@ -1,9 +1,9 @@
 class Specifications extends React.Component {
   render() {
     return (
-      <div className="specifications">
+      <div className="specifications" id="specifications">
         <div className="section">
-          <span className="name">BATTERY CHEMISTRY:</span> <span className="description">Nano Printed Polymer Lithium-ion</span>
+          <div className="head"><span className="name">BATTERY CHEMISTRY:</span> <span className="description">Nano Printed Polymer Lithium-ion</span></div>
           <table>
             <tbody>
               <tr>
@@ -31,7 +31,7 @@ class Specifications extends React.Component {
         </div>
 
         <div className="section">
-          <span className="name">MECHANICAL DATA</span>
+          <div className="head"><span className="name">MECHANICAL DATA</span></div>
           <table>
             <tbody>
               <tr>
@@ -58,7 +58,7 @@ class Specifications extends React.Component {
         </div>
 
         <div className="section">
-          <span className="name">FEATURES & COMPLIANCE</span>
+          <div className="head"><span className="name">FEATURES & COMPLIANCE</span></div>
           <table>
             <tbody>
               <tr>
@@ -74,7 +74,7 @@ class Specifications extends React.Component {
         </div>
 
         <div className="section">
-          <span className="name">WARRANTY</span>
+          <div className="head"><span className="name">WARRANTY</span></div>
           <table>
             <tbody>
               <tr>
@@ -88,8 +88,6 @@ class Specifications extends React.Component {
             </tbody>
           </table>
         </div>
-
-        <div>STORZPOWER.com</div>
       </div>
     )
   }

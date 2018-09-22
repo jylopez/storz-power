@@ -11,6 +11,24 @@
 		<link href="images/StorzPower Logo v2 Hex_Only.png" rel="icon" type="image/x-icon" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("a").on('click', function (event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 800, function () {
+							window.location.hash = hash;
+						});
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>     
 		<div id="root"></div>
@@ -24,13 +42,11 @@
 		<script src="scripts/Specifications.js" type="text/babel"></script>
 		<script src="scripts/Footer.js" type="text/babel"></script>
 		
-
 		<script type="text/babel">
 			class RootPage extends React.Component {
 				render() {
 					return (
 						<div>
-							<Navbar/>
 							<Hero/>
 							<Residential/>
 							<Commercial/>

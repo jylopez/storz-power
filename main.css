@@ -2,3 +2,218 @@ body, h1, h2, h3, h4, h5, h6, p, div {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+
+body {
+    margin: 0;
+}
+
+#root {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #29A3C6;
+}
+
+.hero {
+    background-image: url("images/Asset 7.png");
+    height: 800px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    max-width: 1100px;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  .hero {
+      height: 600px;
+  }
+}
+
+.hero .logo {
+    display: block;
+    margin: auto;
+    padding-top: 135px;
+    width: 50%;
+}
+
+.hero .call-to-action {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero .call-to-action a {
+    background-color: #29A3C6;
+    color: white;
+    display: inline-block;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.residential, .commercial {
+    position: relative;
+    margin-bottom: 400px;
+}
+
+.residential img, .commercial img {
+    margin: auto;
+    display: block;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.residential .device {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    width: 25%;
+}
+
+.commercial .device {
+    position: absolute;
+    bottom: -30%;
+    right: 0;
+    width: 25%;
+}
+
+
+.residential .title {
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    padding: 3px 46px;
+    right: 0;
+    font-size: 40px;
+}
+
+.commercial .title {
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    padding: 3px 46px;
+    left: 0;
+    font-size: 40px;
+}
+
+
+.residential .description {
+    position: absolute;
+    bottom: -25%;
+    max-width: 70%;
+    right: 0;
+    text-align: right;
+    font-size: 2vw;
+}
+
+.commercial .description {
+    position: absolute;
+    bottom: -25%;
+    max-width: 70%;
+    left: 0;
+    text-align: left;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .residential .description, .commercial .description {
+    font-size: 24px;
+    padding: 20px;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  .residential .device, .commercial .device {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .residential, .commercial {
+      margin-bottom: 70px;
+  }
+
+  .residential .title, .commercial .title{
+      font-size: 24px;
+  }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.specifications .name {
+    color: #29A3C6;
+    font-weight: bold;
+}
+
+.specifications .head, .specifications .section {
+    margin-bottom: 20px;
+}
+
+.specifications table {
+    width: 800px;
+    font-weight: 500;
+}
+
+.specifications table tr td {
+    width: 400px;
+}
+
+@media screen and (max-width: 1100px) {
+    .specifications {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .specifications {
+        font-size: 2vw;
+    }
+
+    .specifications table {
+        width: 100%;
+    }
+
+    .specifications table tr td {
+        width: 50%;
+    }
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px 0;
+    color: gray;
+}
