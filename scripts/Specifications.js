@@ -16,7 +16,7 @@ class Specifications extends React.Component {
               </tr>
               <tr>
                 <td>Ambient operating temp range</td>
-                <td>-20 C to 50 C 9-4 F to 122 F</td>
+                <td>-20 C to 50 C (9-4 F to 122 F)</td>
               </tr>
               <tr>
                 <td>Chemistry</td>
