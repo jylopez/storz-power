@@ -12,12 +12,16 @@ class Hero extends React.Component {
   render() {
     return (
       <div className="hero">
-        <Navbar />
-        <img className="logo" src="images/Asset 9.png"/>
+        <img className="background" src="images/Background_Hex.png"/>
+        <div className="content-wrapper">
+          <Navbar />
+          <img className="logo" src="images/Asset 9.png" />
 
-        <div className="call-to-action">
-          <a onClick={this.clickHandler}>Schedule time with us</a>
+          <div className="call-to-action">
+            <a onClick={this.clickHandler}>Schedule time with us</a>
+          </div>
         </div>
+        
       </div>
     )
   }
