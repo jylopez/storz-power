@@ -36,12 +36,8 @@ body {
 }
 
 .hero {
-    /* background-image: url("images/Background_Hex.png"); */
     height: 800px;
     position: relative;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;  */
     max-width: 1100px;
     margin: auto;
     overflow: hidden;
