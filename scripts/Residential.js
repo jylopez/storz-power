@@ -3,7 +3,7 @@ class Residential extends React.Component {
     return (
       <div className="residential" id="residential">
         <img src="images/Asset 14.jpg"/>
-        <img className="device" src="images/Asset 12.png"/>
+        <img className="device" src="images/residential.png"/>
         <div className="title">
           <span className="bold">HOME</span> <span>STORAGE</span>
         </div>
