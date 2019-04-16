@@ -194,6 +194,25 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+    .utility {
+        margin-bottom: 70vw;
+    }
+
+    .utility .device {
+        bottom: -60vw;
+        
+        left: 20vw;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .utility .device {
+        bottom: -77vw;
+        left: 20vw;
+    }
+}
+
 .bold {
     font-weight: bold;
 }
