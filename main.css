@@ -96,34 +96,36 @@ body {
     cursor: pointer;
 }
 
-.residential, .commercial {
+.residential, .commercial, .utility, .micro {
     position: relative;
     margin-bottom: 400px;
 }
 
-.residential img, .commercial img {
+.utility {
+    height: 775px;
+    background-size: cover;
+}
+
+.residential img, .commercial img, .utility img, .micro img {
     margin: auto;
     display: block;
     max-width: 1100px;
     width: 100%;
 }
 
-.residential .device {
+.residential .device, .commercial .device, .utility .device, .micro .device {
     position: absolute;
     bottom: -30%;
     left: 0;
     width: 25%;
 }
 
-.commercial .device {
-    position: absolute;
+.utility .device {
+    width: 50%;
     bottom: -30%;
-    right: 0;
-    width: 25%;
 }
 
-
-.residential .title {
+.residential .title, .commercial .title, .utility .title, .micro .title , .feature .title {
     position: absolute;
     top: 10%;
     background-color: white;
@@ -132,17 +134,7 @@ body {
     font-size: 40px;
 }
 
-.commercial .title {
-    position: absolute;
-    top: 10%;
-    background-color: white;
-    padding: 3px 46px;
-    left: 0;
-    font-size: 40px;
-}
-
-
-.residential .description {
+.residential .description, .commercial .description, .utility .description, .micro .description{
     position: absolute;
     bottom: -25%;
     max-width: 70%;
@@ -151,17 +143,18 @@ body {
     font-size: 28px;
 }
 
-.commercial .description {
+.utility .description {
+    max-width: 56%;
     position: absolute;
-    bottom: -25%;
-    max-width: 70%;
-    left: 0;
+    bottom: -30%;
+}
+
+.commercial .description, .utility .description, .micro .description {
     text-align: left;
-    font-size: 28px;
 }
 
 @media screen and (max-width: 1100px) {
-  .residential .description, .commercial .description {
+  .residential .description, .commercial .description, .utility .description, .micro .description {
     font-size: 24px;
     padding: 20px;
     position: relative;
@@ -173,102 +166,24 @@ body {
 
 
 
-  .residential .device, .commercial .device {
+  .residential .device, .commercial .device, .utility .device, .micro .device {
     position: relative;
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
-  .residential, .commercial {
+  .residential, .commercial, .utility, .micro {
       margin-bottom: 70px;
   }
 
-  .residential .title, .commercial .title{
+  .residential .title, .commercial .title, .utility .title, .micro .title {
       font-size: 24px;
   }
 }
 
 .bold {
     font-weight: bold;
-}
-
-.specifications {
-    font-size: 20px;
-    background-image: url("images/Background_Hex.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    max-width: 1100px;
-    padding: 100px 40px;
-    position: relative;
-}
-
-.specifications img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 200px;
-}
-
-.specifications .frame {
-    background-color: white;
-    padding: 20px;
-}
-
-.specifications .name {
-    color: #29A3C6;
-    font-weight: bold;
-}
-
-.specifications .head {
-    margin-bottom: 20px;
-}
-
-.specifications .section {
-    margin-bottom: 40px;
-}
-
-.specifications table {
-    width: 1000px;
-    font-weight: 500;
-}
-
-.specifications table tr td {
-    width: 500px;
-}
-
-@media screen and (max-width: 1100px) {
-    .specifications {
-        padding: 0 20px;
-        background-image: none;
-    }
-
-    .specifications img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .specifications {
-        font-size: 2vw;
-    }
-
-    .specifications .head {
-        margin-bottom: 20px;
-    }
-
-    .specifications .section {
-        margin-bottom: 30px;
-    }
-
-    .specifications table {
-        width: 100%;
-    }
-
-    .specifications table tr td {
-        width: 50%;
-    }
 }
 
 .footer {
@@ -284,4 +199,70 @@ body {
         font-size: 12px;
         margin-top: 50px;
     }
+}
+
+.specifications-full {
+    width: 1020px;
+    height: 772px;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    margin-bottom: 200px;
+    background-repeat: no-repeat;
+}
+
+.feature {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.feature .background-image{
+    height: 770px;
+}
+
+.feature .description {
+    font-size: 28px;
+    padding: 15px;
+}
+
+.feature .size-matters {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.feature .size-matters-text {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 28px;
+}
+
+.feature .size-matters-text div{
+    margin-bottom: 15px;
+}
+
+.feature .engineering-support-1 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.feature .engineering-support-2 {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 50%;
+}
+
+.feature .watthub {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+}
+
+.feature .blue-bar {
+    height: 15px;
+    width: 100%;
+    background-color: #1EA3C8;
 }
